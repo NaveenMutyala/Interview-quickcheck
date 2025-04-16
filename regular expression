@@ -1,0 +1,39 @@
+^ — string beginning.
+$ — string end.
+\b — word boundary.
+\B — not a word boundary.
+\A — input start.
+\G — end of the previous match.
+\Z — input end, except for the end terminator, if applicable.
+\z — input end.
+
+
+\d — numeric character.
+\D — non-numeric character.
+\s — whitespace character.
+\S — non-whitespace character.
+\w — alphanumeric character or an underscore.
+\W — any character, except for an alphabetic, numeric character or the underscore character.
+. — (full stop) any character, except for the new string character.
+
+\t — tabulation character.
+\n — new line character.
+\r — carriage return character.
+\f — switching to a new page.
+\u0085 — next line unicode character.
+\u2028 — line separator unicode character.
+\u2029 — paragraph separator unicode character.
+
+[abc] — any of the listed (a,b, or c).
+[^abc] — any, except for the listed (neither a, nor b, nor c).
+[a-zA-Z] — merging ranges (Roman characters from a to z without considering case).
+[a-d[m-p]] — combining characters (from a to d and from m to p).
+[a-z&&[def]] — overlapping characters (characters d,e,f).
+[a-z&&[^bc]] — subtracting characters (characters a, d-z).
+
+? — one or absent.
+* — zero or more times.
++ — one or more times.
+{n} — n times.
+{n,} — n times and more.
+{n,m} — at least n times but no more than m times.
